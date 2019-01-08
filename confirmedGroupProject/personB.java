@@ -2,13 +2,19 @@ package confirmedGroupProject;
 
 public class personB {
 
-	public String main(String name)
+	public static void main (String [] args, String name)
 	{
-		String newName = ""
-		for(int i = 0; i < name.length(); i--)
+		System.out.println("Type in your name");
+		String newName = nameChange(name);
+	}
+
+	public String nameChange(String name)
+	{
+		String newName = "";
+		for(int i = name.length() - 1; i >= 0; i--)
 		{
-			neName = newName + nae.charAt(i);
+			newName = newName + name.charAt(i);
 		}
-		System.ot.println(newNam);
+		return newName;
 	}
 }
